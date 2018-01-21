@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>bread-hydration test</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../bread-hydration.html">
+  </head>
+  <body>
+
+    <test-fixture id="BasicTestFixture">
+      <template>
+         <bread-hydration
+            dry="100"
+            liquid="90"
+            precision="0"
+            dry-label="Dry"
+            liquid-label="Liquid">
+          </bread-hydration>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="ChangedPropertyTestFixture">
+      <template>
+         <bread-hydration
+            dry="100"
+            liquid="60"
+            precision="0"
+            dry-label="Dry Weight"
+            liquid-label="Liquid Weight">
+          </bread-hydration>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('bread-hydration', () => {
+
+        test('instantiating the element with default properties works', () => {
+          const element = fixture('BasicTestFixture');
+          
+          const elementShadowRoot = element.shadowRoot;
+          const result = elementShadowRoot.querySelector('#result');
+          assert.equal(result.innerHTML, '90');
+        });
+
+        test('setting a property on the element works', () => {
+          // Create a test fixture
+          const element = fixture('ChangedPropertyTestFixture');
+          
+          const elementShadowRoot = element.shadowRoot;
+          const result = elementShadowRoot.querySelector('#result');
+          assert.equal(result.innerHTML, '60');
+        });
+
+      });
+    </script>
+
+  </body>
+</html>

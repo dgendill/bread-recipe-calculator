@@ -1,0 +1,60 @@
+{
+  "bread-hydration.html": {
+    "bower_components/polymer/polymer-element.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/mixins/element-mixin.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/utils/boot.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/utils/settings.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/utils/resolve-url.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/utils/mixin.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/utils/case-map.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/utils/style-gather.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/elements/dom-module.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/mixins/property-effects.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/utils/path.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/mixins/property-accessors.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/utils/async.html": {
+      "type": "document",
+      "weight": 1
+    },
+    "bower_components/polymer/lib/mixins/template-stamp.html": {
+      "type": "document",
+      "weight": 1
+    }
+  }
+}
