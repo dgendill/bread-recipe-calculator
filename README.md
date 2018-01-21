@@ -26,7 +26,7 @@ To use the element, just add this tag to your page.
 
 ## Demo
 
-Start a local server in the project root or use <a href="https://htmlpreview.github.io/?https://htmlpreview.github.io/?https://github.com/dgendill/html-bread-hydration/blob/master/demo/index.html">htmlpreview</a>.
+Start a local server in the project root or use <a href="https://htmlpreview.github.io/?https://github.com/dgendill/html-bread-hydration/blob/master/demo/index.html">htmlpreview</a>.
 
 ## 
 
