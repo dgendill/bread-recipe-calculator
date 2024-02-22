@@ -18,9 +18,9 @@ import resolve from 'rollup-plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 
 export default {
-  input: 'src/hydration-calculator.js',
+  input: 'src/bread-recipe-calculator.js',
   output: {
-    file: 'dist/hydration-calculator.bundled.js',
+    file: 'dist/bread-recipe-calculator.bundled.js',
     format: 'esm',
   },
   onwarn(warning) {
