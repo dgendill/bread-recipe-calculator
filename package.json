@@ -1,0 +1,47 @@
+{
+  "name": "lit-element-starter-js",
+  "version": "0.0.0",
+  "description": "A simple web component",
+  "main": "my-element.js",
+  "module": "my-element.js",
+  "type": "module",
+  "scripts": {
+    "lint": "lit-analyzer my-element.js && eslint '**/*.js'",
+    "dev": "rollup -c ./rollup.config.js -w",
+    "format": "prettier my-element.js test/* --write",    
+    "analyze": "wca analyze \"**/*.js\" --outFile custom-elements.json",
+    "server": "es-dev-server --node-resolve --watch",    
+    "checksize": "rollup -c ; cat my-element.bundled.js | gzip -9 | wc -c ; rm my-element.bundled.js"
+  },
+  "keywords": [
+    "web-components",
+    "lit-element",
+    "javascript"
+  ],
+  "author": "The Polymer Authors",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  },
+  "devDependencies": {   
+    "@open-wc/testing": "^2.5.10",
+    "@open-wc/testing-karma": "^3.3.11",
+    "@rollup/plugin-replace": "^2.3.1",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.2.0",
+    "deepmerge": "^4.2.2",
+    "es-dev-server": "^1.46.1",
+    "eslint": "^6.8.0",    
+    "lit-analyzer": "^1.1.9",
+    "mocha": "^7.1.1",
+    "prettier": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.32.1",
+    "rollup-plugin-filesize": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "web-component-analyzer": "^1.0.3"
+  }
+}
